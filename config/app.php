@@ -137,13 +137,21 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 
 		/*
+		 * Vendor Service Provider
+		 * */
+		//'Collective\Html\HtmlServiceProvider',
+		//TODO => reemplazo por mi service provider
+		'MyTeachMe\Providers\HtmlServiceProvider',
+
+
+		/*
 		 * Application Service Providers...
 		 */
-		'App\Providers\AppServiceProvider',
-		'App\Providers\BusServiceProvider',
-		'App\Providers\ConfigServiceProvider',
-		'App\Providers\EventServiceProvider',
-		'App\Providers\RouteServiceProvider',
+		'MyTeachMe\Providers\AppServiceProvider',
+		'MyTeachMe\Providers\BusServiceProvider',
+		'MyTeachMe\Providers\ConfigServiceProvider',
+		'MyTeachMe\Providers\EventServiceProvider',
+		'MyTeachMe\Providers\RouteServiceProvider',
 
 	],
 
@@ -192,6 +200,9 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+		'Form' => 'Collective\Html\FormFacade',
+		'Html' => 'Collective\Html\HtmlFacade',
 
 	],
 
